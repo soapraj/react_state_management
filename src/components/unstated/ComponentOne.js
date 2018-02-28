@@ -20,7 +20,7 @@ class ComponentOne extends Component {
         <br/>
         <div>
           <label>Username: </label>
-          <input ref={el => this.inputEl = el} type="text" onChange={this.handleInput} value={this.props.user.name}/>
+          <input ref={el => this.inputEl = el} type="text" onChange={this.handleInput}/>
         </div>
       </div>
     );

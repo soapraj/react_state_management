@@ -8,11 +8,11 @@ class ComponentFour extends Component {
     return (
       <div className="box">
         <div>C4</div>
-        <Button variant="raised" color="primary" id="btn" onClick={this.props.clearStore}>
+        <Button variant="raised" color="primary" id="btn">
           Clear
         </Button>
         <br/>
-        <Button variant="raised" color="primary" id="btn" onClick={this.props.fetchStore}>
+        <Button variant="raised" color="primary" id="btn">
           Fetch
         </Button>
       </div>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Demo from './components/default/Demo';
+import UnstatedDemo from './components/unstated/Demo';
 
 class App extends Component {
 
@@ -13,6 +14,7 @@ class App extends Component {
           <h1 className="App-title">Trying Unstated library for state management</h1>
         </header>
         <Demo/>
+        <UnstatedDemo/>
       </div>
     );
   }
