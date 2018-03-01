@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Demo from './components/native/Demo';
 import UnstatedDemo from './components/unstated/Demo';
+import ReduxDemo from './components/redux/Demo';
 
 class App extends Component {
 
@@ -15,6 +16,7 @@ class App extends Component {
         </header>
         <Demo/>
         <UnstatedDemo/>
+        <ReduxDemo/>
       </div>
     );
   }

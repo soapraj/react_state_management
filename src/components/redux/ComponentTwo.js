@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Components.css';
 
+import { connect } from 'react-redux';
+
 class ComponentTwo extends Component {
   render() {
     return (
@@ -12,4 +14,6 @@ class ComponentTwo extends Component {
   }
 }
 
-export default ComponentTwo;
+export default connect((state) => ({
+  user: state.user
+}))(ComponentTwo);
