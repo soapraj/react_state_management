@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Components.css';
 import Button from 'material-ui/Button';
 import UserStore from './stores/UserStore';
-import { Subscribe } from 'unstated';
+import { Subscribe, Provider } from 'unstated';
 
 class UComponentFour extends Component {
 
