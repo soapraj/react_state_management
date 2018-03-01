@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Components.css';
-import Button from 'material-ui/Button';
 
 class ComponentOne extends Component {
 
@@ -20,7 +19,7 @@ class ComponentOne extends Component {
         <br/>
         <div>
           <label>Username: </label>
-          <input ref={el => this.inputEl = el} type="text" onChange={this.handleInput}/>
+          <input ref={el => this.inputEl = el} type="text" onChange={this.handleInput} value={this.props.user.name}/>
         </div>
       </div>
     );

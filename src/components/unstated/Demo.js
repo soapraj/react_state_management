@@ -1,32 +1,21 @@
 import React, { Component } from 'react';
-import ComponentOne from './ComponentOne';
-import ComponentTwo from './ComponentTwo';
-import ComponentThree from './ComponentThree';
-import ComponentFour from './ComponentFour';
+import UComponentOne from './UComponentOne';
+import UComponentTwo from './UComponentTwo';
+import UComponentThree from './UComponentThree';
+import UComponentFour from './UComponentFour';
 
 class Demo extends Component {
-  state = {
-    name: '',
-    error: null
-  }
-
-  updateStore = name => {
-    this.setState({
-      name: name,
-      error: null
-    });
-  }
-
   render() {
       return (
-        <div className="unstated container left">
+        <div className="container left">
+          <div>{ 'Native React' }</div>
           <div className="outerbox left">
-            <ComponentOne updateStore={this.updateStore}/>
-            <ComponentTwo user={this.state}/>
+            <UComponentOne />
+            <UComponentTwo />
           </div>
           <div className="outerbox left">
-            <ComponentThree user={this.state}/>
-            <ComponentFour />
+            <UComponentThree />
+            <UComponentFour />
           </div>
         </div>
       );

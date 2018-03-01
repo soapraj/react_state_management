@@ -6,6 +6,10 @@
   padding: 20px;
 }
 
+.unstated .box {
+  border: 1px solid red;
+}
+
 .outerbox {
   width: 440px;
 }
@@ -19,5 +23,9 @@
 }
 
 #btn {
+  margin: 10px;
+}
+
+.container {
   margin: 10px;
 }

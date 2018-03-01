@@ -29,7 +29,7 @@ class Demo extends Component {
     })
 
     let self = this;
-    fetch("https://randomuser.me/api/") .then(response => response.json()).then(function(result){
+    fetch("https://randomuser.me/api/").then(response => response.json()).then(function(result){
 
       const name = result.results[0].name.title + result.results[0].name.first + result.results[0].name.last
       self.setState({
@@ -41,7 +41,8 @@ class Demo extends Component {
 
   render() {
       return (
-        <div className="container left">
+        <div className="unstated container left">
+          <div>{ 'Unstated' }</div>
           <div className="outerbox left">
             <ComponentOne updateStore={this.updateStore} user={this.state}/>
             <ComponentTwo user={this.state}/>
