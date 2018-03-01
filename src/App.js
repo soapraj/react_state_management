@@ -4,6 +4,7 @@ import './App.css';
 import Demo from './components/native/Demo';
 import UnstatedDemo from './components/unstated/Demo';
 import ReduxDemo from './components/redux/Demo';
+import RingaDemo from './components/ringa/Demo';
 
 class App extends Component {
 
@@ -17,6 +18,7 @@ class App extends Component {
         <Demo/>
         <UnstatedDemo/>
         <ReduxDemo/>
+        <RingaDemo/>
       </div>
     );
   }
