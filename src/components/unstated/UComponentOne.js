@@ -1,27 +1,25 @@
 import React, { Component } from 'react';
 import './Components.css';
 import UserStore from './stores/UserStore';
-import { Subscribe, Provider } from 'unstated';
+import { Subscribe } from 'unstated';
 
-class ComponentOne extends Component {
+class UComponentOne extends Component {
   render() {
     return (
-      <Provider>
-        <Subscribe to={[UserStore]}>
-          {user => (
-            <div className="box">
-              <div>C1</div>
-              <br/>
-              <div>
-                <label>Username: </label>
-                <input type="text" onChange={event => {user.setName(event.currentTarget.value);}} value={user.state.name}/>
-              </div>
+      <Subscribe to={[UserStore]}>
+        {user => (
+          <div className="box">
+            <div>C1</div>
+            <br/>
+            <div>
+              <label>Username: </label>
+              <input type="text" onChange={event => {user.setName(event.currentTarget.value);}} value={user.state.name}/>
             </div>
-          )}
-        </Subscribe>
-      </Provider>
+          </div>
+        )}
+      </Subscribe>
     );
   }
 }
 
-export default ComponentOne;
+export default UComponentOne;

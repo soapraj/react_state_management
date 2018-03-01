@@ -42,7 +42,7 @@ class Demo extends Component {
   render() {
       return (
         <div className="unstated container left">
-          <div>{ 'Unstated' }</div>
+          <div>{ 'Native React' }</div>
           <div className="outerbox left">
             <ComponentOne updateStore={this.updateStore} user={this.state}/>
             <ComponentTwo user={this.state}/>

@@ -1,10 +1,6 @@
 import { Container } from 'unstated';
 
-let User = {
-  name: ''
-};
-
-class UserStore extends Container<User> {
+class UserStore extends Container {
   state = { name: '' };
 
   setName = name => {
