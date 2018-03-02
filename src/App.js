@@ -5,6 +5,7 @@ import Demo from './components/native/Demo';
 import UnstatedDemo from './components/unstated/Demo';
 import ReduxDemo from './components/redux/Demo';
 import RingaDemo from './components/ringa/Demo';
+import MobXDemo from './components/mobx/Demo';
 
 class App extends Component {
 
@@ -19,6 +20,7 @@ class App extends Component {
         <UnstatedDemo/>
         <ReduxDemo/>
         <RingaDemo/>
+        <MobXDemo/>
       </div>
     );
   }
