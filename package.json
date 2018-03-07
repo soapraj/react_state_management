@@ -15,6 +15,7 @@
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
     "ringa": "^0.4.1",
+    "ringa-fw-react": "^0.5.1",
     "unstated": "^1.0.3"
   },
   "scripts": {
