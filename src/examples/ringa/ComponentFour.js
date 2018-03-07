@@ -3,7 +3,7 @@ import './Components.css';
 import Button from 'material-ui/Button';
 
 import {dispatch} from 'ringa';
-import {depend, dependency} from 'react-ringa/dist/react-ringa';
+import {depend, dependency} from 'react-ringa';
 import {UserModel} from "./Demo";
 
 class ComponentFour extends Component {

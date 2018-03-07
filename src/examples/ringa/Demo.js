@@ -4,8 +4,8 @@ import ComponentTwo from './ComponentTwo';
 import ComponentThree from './ComponentThree';
 import ComponentFour from './ComponentFour';
 
-import {Model, Controller} from 'ringa/dist/ringa';
-import {attach} from 'react-ringa/dist/react-ringa';
+import {Model, Controller} from 'ringa';
+import {attach} from 'react-ringa';
 
 export const UserModel = Model.construct('UserModel', ['userName']);
 

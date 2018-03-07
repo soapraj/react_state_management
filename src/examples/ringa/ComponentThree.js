@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Components.css';
 
-import {depend, dependency} from 'react-ringa/dist/react-ringa';
+import {depend, dependency} from 'react-ringa';
 import {UserModel} from "./Demo";
 
 class ComponentThree extends Component {

@@ -4,7 +4,7 @@ import './App.css';
 
 import {TabNavigator, Tab} from 'ringa-fw-react';
 
-import Demo from './examples/native/Demo';
+import NativeDemo from './examples/native/Demo';
 import UnstatedDemo from './examples/unstated/Demo';
 import ReduxDemo from './examples/redux/Demo';
 import RingaDemo from './examples/ringa/Demo';
@@ -20,19 +20,19 @@ class App extends Component {
           <h1 className="App-title">Trying different libraries for state management</h1>
         </header>
         <TabNavigator>
-          <Tab>
-            <Demo/>
+          <Tab label="Native">
+            <NativeDemo/>
           </Tab>
-          <Tab>
+          <Tab label="Unstated">
             <UnstatedDemo/>
           </Tab>
-          <Tab>
+          <Tab label="Redux">
             <ReduxDemo/>
           </Tab>
-          <Tab>
+          <Tab label="Ringa">
             <RingaDemo/>
           </Tab>
-          <Tab>
+          <Tab label="MobX">
             <MobXDemo/>
           </Tab>
         </TabNavigator>
