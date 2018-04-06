@@ -20,7 +20,6 @@ class ComponentThree extends Component {
     return (
       <div className="box">
         <div>C3</div>
-        <div>{"Username: "}{this.props.user.name}</div>
         <button onClick={() => {this.startStop_onClickHandler()}}>{model.intervalKey ? "Stop" : "Start"}</button>
         <Grid model={model} frame={model.frame} />
       </div>
@@ -31,7 +30,7 @@ class ComponentThree extends Component {
     if (this.state.model.intervalKey) {
       stopPerformanceTest(this.state.model);
     } else {
-      runPerformanceTestOnModel(this.state.model, 20, 50, elapsed => {
+      runPerformanceTestOnModel(this.state.model, undefined, undefined, elapsed => {
         this.forceUpdate();
       });
     }

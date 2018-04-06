@@ -40,7 +40,7 @@ function checkIfBelongsToMandelbrotSet(x, y) {
  * @param interval The interval in milliseconds.
  * @returns {number}
  */
-export function runPerformanceTestOnModel(model, resolution, interval, callback) {
+export function runPerformanceTestOnModel(model, resolution = 30, interval = 50, callback = undefined) {
   if (model.intervalKey) {
     stopPerformanceTest(model);
   }
@@ -81,12 +81,11 @@ export function runPerformanceTestOnModel(model, resolution, interval, callback)
     }
   };
 
-  console.log('Start');
   model.intervalKey = setInterval(frame, interval);
 }
 
 export function stopPerformanceTest(model) {
   clearInterval(model.intervalKey);
 
-  delete model.intervalKey;
+  model.intervalKey = undefined;
 }

@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 
 import GridNode from './GridNode';
+import {GridModel} from '../ComponentThree';
+
+import {depend, dependency} from 'react-ringa';
 
 export default class Grid extends Component {
   constructor() {
@@ -8,19 +11,16 @@ export default class Grid extends Component {
   }
 
   render() {
-    let {model, frame} = this.props;
-
     let a = [];
 
-    for (let i = 0; i < model.resolution; i++)
+    for (let i = 0; i < 50; i++)
       a[i] = true;
 
     return <div className="grid">
-      <div>{frame}</div>
       {a.map((_, x) => <div className="grid row" key={x}>
         {a.map((_, y) => {
           let name = `${x}_${y}`;
-          return <GridNode value={model[name]} key={name} />;
+          return <GridNode key={name} name={name} />;
         })}
       </div>)}
     </div>;

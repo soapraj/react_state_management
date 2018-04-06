@@ -8,8 +8,6 @@ export default class GridNode extends Component {
       highlight: this.props.value
     });
 
-    console.log(this.props.value);
-
     return <div className={cn} />;
   }
 }
